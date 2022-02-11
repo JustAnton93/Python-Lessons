@@ -1,0 +1,10 @@
+proceeds = int(input('Введите значение выручки: '))
+cost = int(input('Введите значение издержек: '))
+workers = int(input('Введите количество сотрудников фирмы: '))
+if proceeds > cost:
+    amount = proceeds - cost
+    print('Фирма отработала с прибылью, её рентабельность составила: ',amount,'грн')
+    allGet = amount/workers
+    print('Каждый сотрудник получил: ', allGet,'грн')
+else:
+    print('Ваша фирма отработала с убытком, она нерентабельна. ')
