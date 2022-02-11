@@ -1,0 +1,5 @@
+n = int(input('Введите любое целое число: '))
+nn = n*11
+nnn = n*111
+amount = n + nn + nnn
+print(f'{n}+{nn}+{nnn}={amount}')
