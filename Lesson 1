@@ -1,0 +1,5 @@
+userName = input('Введите Ваше имя: ')
+age = int(input('Введите сколько Ваш возраст: '))
+married = input('Введите Ваше семейное положение: ')
+childrens = int(input('Сколько у Вас детей? '))
+print('Меня зовут' , userName ,'мне', age,'года' ,'я', married ,'и воспитываю',childrens, 'детей')
