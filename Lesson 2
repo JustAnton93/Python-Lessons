@@ -1,0 +1,4 @@
+userTime = int(input('Введите время в секундах: '))
+timeMinut = userTime/60
+timeHours = timeMinut/60
+print(f'{timeHours}:{timeMinut}:{userTime}')
