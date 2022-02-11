@@ -1,0 +1,8 @@
+userNumber = int(input('Введите целое положительное число: '))
+r = -1
+while userNumber > 10:
+    d = userNumber % 10
+    userNumber//=10
+    if d > r:
+        r = d
+print(r)
