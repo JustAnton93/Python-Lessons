@@ -1,0 +1,11 @@
+distanceFirstDay  = int(input('Введите сколько спортсмен пробежал в первый день км: '))
+distanceLastDay = int(input('Сколько максимум хочет пробежать спортсмен км? '))
+firstDay = 1
+print(f'В {firstDay} - й день он пробежал:  {distanceFirstDay} км')
+while distanceLastDay > distanceFirstDay :
+    distanceFirstDay = distanceFirstDay + distanceFirstDay*0.1
+    firstDay = firstDay + 1
+    print("В", firstDay, '- й день он пробежал: ', distanceFirstDay, 'км')
+else:
+    lastDay = firstDay
+    print("Ответ: на", lastDay, '- й день он пробежал не менее ', distanceLastDay, 'км')
