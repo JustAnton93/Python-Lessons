@@ -1,0 +1,49 @@
+Index: sada.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>my_list = [20, 30, 40, 50]\r\n*el_1, el_2, el_3 = my_list\r\nprint(el_1, el_2, el_3)\r\nel_1, *el_2, el_3 = my_list\r\nprint(el_1, el_2, el_3)\r\nel_1, el_2, *el_3 = my_list\r\nprint(el_1, el_2, el_3)\r\nel_1, el_2, el_3, *el_4 = my_list\r\nprint(el_1, el_2, el_3, el_4)\r\nel_1, el_2, el_3, el_4, *el_5 = my_list\r\nprint(el_1, el_2, el_3, el_4, el_5)
+===================================================================
+diff --git a/sada.py b/sada.py
+--- a/sada.py	
++++ b/sada.py	
+@@ -8,4 +8,7 @@
+ el_1, el_2, el_3, *el_4 = my_list
+ print(el_1, el_2, el_3, el_4)
+ el_1, el_2, el_3, el_4, *el_5 = my_list
+-print(el_1, el_2, el_3, el_4, el_5)
+\ No newline at end of file
++print(el_1, el_2, el_3, el_4, el_5)
++if:
++    a = (3, 4, 5)
++print('vesna')
+\ No newline at end of file
+Index: example1.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>a = \"printer\", \"skaner\", \"nout\"\r\nb = [9, 0, 21]\r\nf = {2, 8, 36}\r\nc = \"g\"\r\nd = {\"d\":\"m\"}\r\nr = (10>5)\r\nw = 5\r\nprint(type(a))\r\nprint(type(b))\r\nprint(type(f))\r\nprint(type(c))\r\nprint(type(d))\r\nprint(type(r))\r\nprint(type(w))\r\nb = [9, \"a\", {21}, (10 > 5), ([]), {\"b\":\"a\"}]\r\nindex = []\r\nfor index in b:\r\n    print(type(index))\r\n1 2 3 1 2 3\r\na: list = input('Vvedite raznye dannye')\r\na = a.split()\r\n
+===================================================================
+diff --git a/example1.py b/example1.py
+--- a/example1.py	
++++ b/example1.py	
+@@ -1,21 +1,0 @@
+-a = "printer", "skaner", "nout"
+-b = [9, 0, 21]
+-f = {2, 8, 36}
+-c = "g"
+-d = {"d":"m"}
+-r = (10>5)
+-w = 5
+-print(type(a))
+-print(type(b))
+-print(type(f))
+-print(type(c))
+-print(type(d))
+-print(type(r))
+-print(type(w))
+-b = [9, "a", {21}, (10 > 5), ([]), {"b":"a"}]
+-index = []
+-for index in b:
+-    print(type(index))
+-1 2 3 1 2 3
+-a: list = input('Vvedite raznye dannye')
+-a = a.split()
